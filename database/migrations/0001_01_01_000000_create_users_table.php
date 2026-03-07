@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Migrations\Migration;
+
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
@@ -18,8 +19,9 @@ return new class extends Migration
             $table->string('lastname');
             $table->string('email')->unique();
             $table->string('mobile')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('email_verified_at')->nullable()->default(null);
             $table->string('password');
+            $table->boolean('status')->default(true)->comment('Active/Inactive user');
             $table->rememberToken();
             $table->timestamps();
         });
