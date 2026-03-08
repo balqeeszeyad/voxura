@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('mobile')->nullable();
             $table->timestamp('email_verified_at')->nullable()->default(null);
             $table->string('password');
-            $table->boolean('status')->default(true)->comment('Active/Inactive user');
+            $table->enum('role', ['buyer','administrator']);
             $table->rememberToken();
             $table->timestamps();
         });
