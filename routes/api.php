@@ -20,3 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // login endpoint for issuing tokens
 Route::post('/login', [\App\Http\Controllers\Api\UserController::class, 'login']);
+
+// logout endpoint for revoking tokens
+Route::middleware('auth:sanctum')->post('/logout', [\App\Http\Controllers\Api\UserController::class, 'logout']);
