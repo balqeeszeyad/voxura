@@ -1,0 +1,108 @@
+/* Signin page styles */
+
+body {
+  font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.min-h-screen { min-height: 100vh; }
+.bg-gradient-to-br { background: linear-gradient(to bottom right, #fff7ed, #ffffff, #f9fafb); }
+.pt-20 { padding-top: 5rem; }
+.pb-12 { padding-bottom: 3rem; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.max-w-md { max-width: 28rem; }
+.w-full { width: 100%; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+@media (min-width: 640px) { .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; } }
+@media (min-width: 1024px) { .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; } }
+.text-center { text-align: center; }
+.mb-8 { margin-bottom: 2rem; }
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+.font-bold { font-weight: 700; }
+.text-gray-900 { color: #111827; }
+.mb-2 { margin-bottom: 0.5rem; }
+.text-orange-600 { color: #ea580c; }
+.text-gray-600 { color: #4b5563; }
+.border-0 { border-width: 0; }
+.shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+.bg-white { background-color: #ffffff; }
+.rounded-lg { border-radius: 0.5rem; }
+.p-6 { padding: 1.5rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.mb-4 { margin-bottom: 1rem; }
+.space-y-4 > * + * { margin-top: 1rem; }
+.bg-red-50 { background-color: #fef2f2; }
+.border { border-width: 1px; }
+.border-red-200 { border-color: #fecaca; }
+.text-red-700 { color: #b91c1c; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.block { display: block; }
+.font-medium { font-weight: 500; }
+.text-gray-700 { color: #374151; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.left-3 { left: 0.75rem; }
+.top-1\/2 { top: 50%; }
+.-translate-y-1\/2 { transform: translateY(-50%); }
+.h-5 { height: 1.25rem; }
+.w-5 { width: 1.25rem; }
+.text-gray-400 { color: #9ca3af; }
+.pl-10 { padding-left: 2.5rem; }
+.border-gray-300 { border-color: #d1d5db; }
+.rounded-md { border-radius: 0.375rem; }
+.focus\:outline-none:focus { outline: 2px solid transparent; outline-offset: 2px; }
+.focus\:ring-2:focus { box-shadow: 0 0 0 2px; }
+.focus\:ring-orange-500:focus { box-shadow: 0 0 0 2px #f97316; }
+.focus\:border-transparent:focus { border-color: transparent; }
+.text-red-500 { color: #ef4444; }
+.justify-between { justify-content: space-between; }
+.text-xs { font-size: 0.75rem; line-height: 1rem; }
+.hover\:text-orange-700:hover { color: #c2410c; }
+.bg-orange-600 { background-color: #ea580c; }
+.hover\:bg-orange-700:hover { background-color: #c2410c; }
+.text-white { color: #ffffff; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.group:hover .group-hover\:translate-x-1 { transform: translateX(0.25rem); }
+.transition-colors { transition-property: color, background-color, border-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+.ml-2 { margin-left: 0.5rem; }
+.transition-transform { transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+.font-semibold { font-weight: 600; }
+.mt-8 { margin-top: 2rem; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.border-t { border-top-width: 1px; }
+.text-gray-500 { color: #6b7280; }
+.mt-6 { margin-top: 1.5rem; }
+.grid { display: grid; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gap-4 { gap: 1rem; }
+.hover\:bg-gray-50:hover { background-color: #f9fafb; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.mr-2 { margin-right: 0.5rem; }
+.bg-blue-50 { background-color: #eff6ff; }
+.border-blue-200 { border-color: #bfdbfe; }
+.text-blue-900 { color: #1e3a8a; }
+.text-blue-700 { color: #1d4ed8; }
+strong { font-weight: 700; }
+
+/* Form elements */
+input, button {
+  font-family: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* SVG icons */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
