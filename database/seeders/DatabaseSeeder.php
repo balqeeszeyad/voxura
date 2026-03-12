@@ -19,11 +19,11 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->create([
             'firstname' => 'Test',
-            'middlename' => 'Middle',
-            'lastname' => 'User',
-            'email' => 'test@example.com',
-            'mobile' => '123',
-            'password' => bcrypt('123'),
+            'lastname'  => 'User',          // required by migration
+            'email'     => 'test@example.com',
+            'mobile'    => '123',
+            'role'      => 'buyer',         // optional – enum defaults to first value
+            'password'  => '123123',        // cast will hash it
         ]);
     }
 }

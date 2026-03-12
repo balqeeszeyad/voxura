@@ -32,6 +32,10 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
+            // the `role` column is required by the schema; default every new
+            // test user to a buyer so that the factory can be used without
+            // explicitly setting a role in every test.
+            'role' => 'buyer',
         ];
     }
 
